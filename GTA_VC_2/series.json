@@ -1,0 +1,14 @@
+{
+    "info": {
+        "title": "GTA Vice City",
+        "logo": "logo.png"
+    },
+    "common": {
+        "fileGroups": []
+    },
+    "stations": [
+        {
+            "path": "flashfm"
+        }
+    ]
+}
