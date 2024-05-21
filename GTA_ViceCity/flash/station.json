@@ -1,0 +1,106 @@
+{
+  "tag": "flash",
+  "info": {
+    "title": "Flash FM",
+    "genre": "Pop",
+    "logo": "logo.png",
+    "dj": "Toni & Teri"
+  },
+  "fileGroups": [
+    {
+      "tag": "track",
+      "files": [
+        {
+	   "path": "VC_FlashFM.m4a",
+          "duration": 3588.9 
+        }        
+      ]
+    },
+    {
+      "tag": "general",
+      "files": [
+        {
+          "path": "general/general_1.m4a",
+          "duration": 6.41
+        }
+      ]
+    },
+    {
+      "tag": "mixin",
+      "files": [
+        {
+          "path": "mixin/mixin_1.m4a",
+          "duration": 4.41
+        }
+      ]
+    }
+  ],
+  "playlist": {
+    "firstFragment": {
+      "fragmentTag": "general"
+    },
+    "fragments": [
+      {
+        "tag": "general",
+        "src": {
+          "type": "group",
+          "groupTag": "general"
+        },
+        "nextFragment": [
+          {
+            "fragmentTag": "track"
+          }
+        ]
+      },
+      {
+        "tag": "track",
+        "src": {
+          "type": "group",
+          "groupTag": "track"
+        },
+        "nextFragment": [
+          {
+            "fragmentTag": "general",
+            "probability": 0.0
+          },
+          {
+            "fragmentTag": "track"
+          }
+        ],
+        "mixins": {
+          "pos": [
+            {
+              "tag": "begin",
+              "relativeOffset": 0.0
+            },
+            {
+              "tag": "end",
+              "relativeOffset": 0.0
+            }
+          ],
+          "mix": [
+            {
+              "tag": "mixins",
+              "src": {
+                "type": "group",
+                "groupTag": "mixin"
+              },
+              "condition": {
+                "type": "random",
+                "probability": 0.0
+              },
+              "posVariant": [
+                {
+                  "posTag": "end"
+                },
+                {
+                  "posTag": "begin"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
