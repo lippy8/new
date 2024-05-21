@@ -61,7 +61,7 @@
         "nextFragment": [
           {
             "fragmentTag": "general",
-            "probability": 0.0
+            "probability": 0.1
           },
           {
             "fragmentTag": "track"
@@ -71,11 +71,11 @@
           "pos": [
             {
               "tag": "begin",
-              "relativeOffset": 0.0
+              "relativeOffset": 0.1
             },
             {
               "tag": "end",
-              "relativeOffset": 0.0
+              "relativeOffset": 0.1
             }
           ],
           "mix": [
@@ -87,7 +87,7 @@
               },
               "condition": {
                 "type": "random",
-                "probability": 0.0
+                "probability": 0.1
               },
               "posVariant": [
                 {
