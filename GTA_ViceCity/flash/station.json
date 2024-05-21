@@ -1,0 +1,20 @@
+{
+  "tag": "flash",
+  "info": {
+    "title": "Flash FM",
+    "genre": "Pop",
+    "logo": "logo.png",
+    "dj": "Toni & Teri"
+  },
+  "fileGroups": [
+    {
+      "tag": "track",
+      "files": [
+        {
+          "path": "VC_FlashFM.m4a",
+          "duration": 3588.9 
+        }
+      ]
+    }
+  ]
+ }
