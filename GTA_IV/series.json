@@ -1,0 +1,14 @@
+{
+    "info": {
+        "title": "GTA IV",
+        "logo": "iv.png"
+    },
+    "common": {
+        "fileGroups": []
+    },
+    "stations": [
+        {
+            "path": "jnr"
+        }
+    ]
+}
