@@ -1,0 +1,41 @@
+{
+  "tag": "emotion",
+  "info": {
+    "title": "Emotion 98.3",
+    "genre": "Soft Pop, Power Ballads, Soft Rock",
+    "logo": "emotion.png",
+    "dj": "Lionel Makepeace"
+  },
+  "fileGroups": [
+    {
+      "tag": "track",
+      "files": [
+        {
+          "tag": "p1",
+          "path": "vc_emotion.m4a",
+          "duration": 3544.9
+        }
+      ]
+    }
+  ],
+  "playlist": {
+    "firstFragment": {
+      "fragmentTag": "track"
+    },
+    "fragments": [
+      {
+        "tag": "track",
+        "src": {
+          "type": "file",
+          "groupTag": "track",
+          "fileTag": "p1"
+        },
+        "nextFragment": [
+          {
+            "fragmentTag": "track"
+          }
+        ]
+      }
+    ]
+  }
+}
