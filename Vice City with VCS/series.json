@@ -1,0 +1,38 @@
+{
+    "info": {
+        "title": "GTA: Vice City Radio",
+        "logo": "vc.png"
+    },
+    "common": {
+        "fileGroups": []
+    },
+    "stations": [
+        {
+            "path": "emotion"
+        },
+        {
+            "path": "espantoso"
+        },
+        {
+            "path": "fever"
+        },
+        {
+            "path": "flashfm"
+        },
+        {
+            "path": "kchat"
+        },
+        {
+            "path": "vcpr"
+        },
+        {
+            "path": "vrock"
+        },
+        {
+            "path": "wave"
+        },
+        {
+            "path": "wildstyle"
+        }
+    ]
+}

@@ -1,0 +1,77 @@
+{
+  "tag": "fever",
+  "info": {
+    "title": "Fever 105 + Paradise FM + VCFL",
+    "genre": "Disco, Soul, Jazz, Funk, R&B",
+    "logo": "fever.png",
+    "dj": "Oliver 'Ladykiller' Biscuit & Tina Jane"
+  },
+  "fileGroups": [
+    {
+      "tag": "track",
+      "files": [
+        {
+          "tag": "p1",
+          "path": "vc_fever.m4a",
+          "duration": 3793.0
+        },
+        {
+          "tag": "p2",
+          "path": "vcs_paradise.m4a",
+          "duration": 2477.9
+        },
+        {
+          "tag": "p3",
+          "path": "vcs_vcfl.m4a",
+          "duration": 2334.9
+        }  
+      ]
+    }
+  ],
+  "playlist": {
+    "firstFragment": {
+      "fragmentTag": "part1"
+    },
+    "fragments": [
+      {
+        "tag": "part1",
+        "src": {
+          "type": "file",
+          "groupTag": "track",
+          "fileTag": "p1"
+        },
+        "nextFragment": [
+          {
+            "fragmentTag": "part2"
+          }
+        ]
+      },
+      {
+        "tag": "part2",
+        "src": {
+          "type": "file",
+          "groupTag": "track",
+          "fileTag": "p2"
+        },
+        "nextFragment": [
+          {
+            "fragmentTag": "part3"
+          }
+        ]
+      },
+      {
+        "tag": "part3",
+        "src": {
+          "type": "file",
+          "groupTag": "track",
+          "fileTag": "p3"
+        },
+        "nextFragment": [
+          {
+            "fragmentTag": "part1"
+          }
+        ]
+      }
+    ]
+  }
+}

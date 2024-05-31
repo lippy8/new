@@ -1,0 +1,59 @@
+{
+  "tag": "vrock",
+  "info": {
+    "title": "V-Rock",
+    "genre": "Hard Rock, Heavy Metal",
+    "logo": "vrock.png",
+    "dj": "Lazlow Jones"
+  },
+  "fileGroups": [
+    {
+      "tag": "track",
+      "files": [
+        {
+          "tag": "p1",
+          "path": "vc_vrock.m4a",
+          "duration": 4644.9
+        },
+        {
+          "tag": "p2",
+          "path": "vcs_vrock.m4a",
+          "duration": 3580.8
+        } 
+      ]
+    }
+  ],
+  "playlist": {
+    "firstFragment": {
+      "fragmentTag": "part1"
+    },
+    "fragments": [
+      {
+        "tag": "part1",
+        "src": {
+          "type": "file",
+          "groupTag": "track",
+          "fileTag": "p1"
+        },
+        "nextFragment": [
+          {
+            "fragmentTag": "part2"
+          }
+        ]
+      },
+      {
+        "tag": "part2",
+        "src": {
+          "type": "file",
+          "groupTag": "track",
+          "fileTag": "p2"
+        },
+        "nextFragment": [
+          {
+            "fragmentTag": "part1"
+          }
+        ]
+      }
+    ]
+  }
+}

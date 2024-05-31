@@ -1,0 +1,59 @@
+{
+  "tag": "vcpr",
+  "info": {
+    "title": "VCPR",
+    "genre": "Politics Talk Radio",
+    "logo": "vcpr.png",
+    "dj": "Various"
+  },
+  "fileGroups": [
+    {
+      "tag": "track",
+      "files": [
+        {
+          "tag": "p1",
+          "path": "vc_vcpr.m4a",
+          "duration": 5184.9
+        },
+        {
+          "tag": "p2",
+          "path": "vcs_vcpr.m4a",
+          "duration": 3899.9
+        } 
+      ]
+    }
+  ],
+  "playlist": {
+    "firstFragment": {
+      "fragmentTag": "part1"
+    },
+    "fragments": [
+      {
+        "tag": "part1",
+        "src": {
+          "type": "file",
+          "groupTag": "track",
+          "fileTag": "p1"
+        },
+        "nextFragment": [
+          {
+            "fragmentTag": "part2"
+          }
+        ]
+      },
+      {
+        "tag": "part2",
+        "src": {
+          "type": "file",
+          "groupTag": "track",
+          "fileTag": "p2"
+        },
+        "nextFragment": [
+          {
+            "fragmentTag": "part1"
+          }
+        ]
+      }
+    ]
+  }
+}

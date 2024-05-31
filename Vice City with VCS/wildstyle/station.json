@@ -1,0 +1,59 @@
+{
+  "tag": "wildstyle",
+  "info": {
+    "title": "Wildstyle + Fresh FM",
+    "genre": "Hip Hop, Electro, Breakbeat,",
+    "logo": "wildstyle.png",
+    "dj": "Mr. Magic & Luke Campbell"
+  },
+  "fileGroups": [
+    {
+      "tag": "track",
+      "files": [
+        {
+          "tag": "p1",
+          "path": "vc_wildstyle.m4a",
+          "duration": 4107.9
+        },
+        {
+          "tag": "p2",
+          "path": "vcs_fresh.m4a",
+          "duration": 1784.9
+        } 
+      ]
+    }
+  ],
+  "playlist": {
+    "firstFragment": {
+      "fragmentTag": "part1"
+    },
+    "fragments": [
+      {
+        "tag": "part1",
+        "src": {
+          "type": "file",
+          "groupTag": "track",
+          "fileTag": "p1"
+        },
+        "nextFragment": [
+          {
+            "fragmentTag": "part2"
+          }
+        ]
+      },
+      {
+        "tag": "part2",
+        "src": {
+          "type": "file",
+          "groupTag": "track",
+          "fileTag": "p2"
+        },
+        "nextFragment": [
+          {
+            "fragmentTag": "part1"
+          }
+        ]
+      }
+    ]
+  }
+}

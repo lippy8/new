@@ -1,0 +1,59 @@
+{
+  "tag": "espantoso",
+  "info": {
+    "title": "Radio Espantoso",
+    "genre": "Latin Jazz, Mambo",
+    "logo": "espantoso.png",
+    "dj": "Hector Hernandez"
+  },
+  "fileGroups": [
+    {
+      "tag": "track",
+      "files": [
+        {
+          "tag": "p1",
+          "path": "vc_espantoso.m4a",
+          "duration": 3698.9
+        },
+        {
+          "tag": "p2",
+          "path": "vcs_espantoso.m4a",
+          "duration": 1831.5
+        } 
+      ]
+    }
+  ],
+  "playlist": {
+    "firstFragment": {
+      "fragmentTag": "part1"
+    },
+    "fragments": [
+      {
+        "tag": "part1",
+        "src": {
+          "type": "file",
+          "groupTag": "track",
+          "fileTag": "p1"
+        },
+        "nextFragment": [
+          {
+            "fragmentTag": "part2"
+          }
+        ]
+      },
+      {
+        "tag": "part2",
+        "src": {
+          "type": "file",
+          "groupTag": "track",
+          "fileTag": "p2"
+        },
+        "nextFragment": [
+          {
+            "fragmentTag": "part1"
+          }
+        ]
+      }
+    ]
+  }
+}

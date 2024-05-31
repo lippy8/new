@@ -1,0 +1,59 @@
+{
+  "tag": "wave",
+  "info": {
+    "title": "Wave 103",
+    "genre": "New Wave, Synthpop",
+    "logo": "wave.png",
+    "dj": "Adam First and Trish Camden"
+  },
+  "fileGroups": [
+    {
+      "tag": "track",
+      "files": [
+        {
+          "tag": "p1",
+          "path": "vc_wave.m4a",
+          "duration": 3966.9
+        },
+        {
+          "tag": "p2",
+          "path": "vcs_wave.m4a",
+          "duration": 3599.9
+        } 
+      ]
+    }
+  ],
+  "playlist": {
+    "firstFragment": {
+      "fragmentTag": "part1"
+    },
+    "fragments": [
+      {
+        "tag": "part1",
+        "src": {
+          "type": "file",
+          "groupTag": "track",
+          "fileTag": "p1"
+        },
+        "nextFragment": [
+          {
+            "fragmentTag": "part2"
+          }
+        ]
+      },
+      {
+        "tag": "part2",
+        "src": {
+          "type": "file",
+          "groupTag": "track",
+          "fileTag": "p2"
+        },
+        "nextFragment": [
+          {
+            "fragmentTag": "part1"
+          }
+        ]
+      }
+    ]
+  }
+}

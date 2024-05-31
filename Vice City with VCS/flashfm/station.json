@@ -1,0 +1,59 @@
+{
+  "tag": "flashfm",
+  "info": {
+    "title": "Flash FM",
+    "genre": "Pop",
+    "logo": "flash.png",
+    "dj": "DJ Toni"
+  },
+  "fileGroups": [
+    {
+      "tag": "track",
+      "files": [
+        {
+          "tag": "p1",
+          "path": "vc_flashfm.m4a",
+          "duration": 3792.0
+        },
+        {
+          "tag": "p2",
+          "path": "vcs_flash.m4a",
+          "duration": 4146.5
+        } 
+      ]
+    }
+  ],
+  "playlist": {
+    "firstFragment": {
+      "fragmentTag": "part1"
+    },
+    "fragments": [
+      {
+        "tag": "part1",
+        "src": {
+          "type": "file",
+          "groupTag": "track",
+          "fileTag": "p1"
+        },
+        "nextFragment": [
+          {
+            "fragmentTag": "part2"
+          }
+        ]
+      },
+      {
+        "tag": "part2",
+        "src": {
+          "type": "file",
+          "groupTag": "track",
+          "fileTag": "p2"
+        },
+        "nextFragment": [
+          {
+            "fragmentTag": "part1"
+          }
+        ]
+      }
+    ]
+  }
+}
